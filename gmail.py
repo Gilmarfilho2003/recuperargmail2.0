@@ -1,4 +1,4 @@
-import random
+import intertool
 import smtplib
 
 smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
@@ -34,4 +34,4 @@ for symbols in print_perms:
         break;
     except smtplib.SMTPAuthenticationError:
         print ("[!] Senha tem mais do que "  + qnt_digitos + ": %s") % symbols
-
+ break
